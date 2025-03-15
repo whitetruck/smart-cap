@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用记录</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="status-bar">
+                <div class="device-status">
+                    <div class="energy-ring">
+                        <svg viewBox="0 0 36 36">
+                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(0, 247, 255, 0.2)" stroke-width="2" />
+                            <path class="energy-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#00f7ff" stroke-width="2" stroke-dasharray="85, 100" />
+                        </svg>
+                        <span class="energy-text">85%</span>
+                    </div>
+                    <i class="fas fa-bluetooth-b connected"></i>
+                </div>
+            </div>
+            
+            <div class="profile-header">
+                <div class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="profile-info">
+                    <div class="avatar-container">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"></div>
+                        <div class="user-title">使用记录</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <div class="profile-section">
+                <div class="section-title">
+                    <i class="fas fa-bullseye"></i>
+                    <span>主要目标</span>
+                </div>
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="goal-text"></span>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="goal-text"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <div class="section-title">
+                    <i class="fas fa-history"></i>
+                    <span>使用记录</span>
+                </div>
+                <div class="history-list">
+                    <!-- 使用记录将通过 JavaScript 动态添加 -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html> 
